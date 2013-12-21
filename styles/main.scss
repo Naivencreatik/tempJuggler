@@ -1,1 +1,21 @@
+@import "compass";
+@import "compass/css3";
+
 @import "normalize-scss/normalize";
+
+@import "init/mixins";
+@import "init/variables";
+@import "init/icons";
+
+@import "animations/animations";
+
+@import "init/global";
+@import "init/slide";
+
+@import "views/loader";
+@import "views/menu";
+@import "views/introduction";
+@import "views/bio";
+@import "views/show";
+@import "views/gallery";
+@import "views/contact";

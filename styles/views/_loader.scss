@@ -1,0 +1,69 @@
+#jpreOverlay {
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $color1;
+}
+
+#jpreSlide{
+    width: 50%;
+    height: 30%;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ccc;
+    text-align: center;
+}
+
+#jpreLoader{
+    width: 100%;
+    height: 100%;
+}
+
+#jpreBar {
+    background-color: transparentize($white, .8);
+    @include animation(progress 2s linear infinite);  
+}
+
+#jprePercentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 25px;
+    margin-top: -50px;
+    margin-left: -12.5px;
+    font-size: 24px;
+    color: $white;
+    text-align: center;
+}
+
+#jpreButton{
+    width: 100px;
+    margin: 0 auto;
+    padding: 3px 10px;
+    color: $white;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+    text-shadow:-1px -1px 0 #01293F;
+    border:1px solid #2EACEA;
+    background: #23a6ed;
+    cursor: pointer;
+}
+
+@include keyframes (progress){
+  0%{
+    background-position: 0 0;
+  }
+  100%{
+    background-position: -60px -60px;
+  }
+}
+
+.progress {
+  @extend %animated;
+  @include animation-name(progress);
+}
