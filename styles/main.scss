@@ -1,10 +1,9 @@
 @import "compass";
 @import "compass/css3";
-// @import "compass/reset";
 
+@import "normalize-scss/normalize";
 @import "libs/media-queries";
 
-@import "init/normalize";
 @import "init/mixins";
 @import "init/variables";
 @import "init/icons";
