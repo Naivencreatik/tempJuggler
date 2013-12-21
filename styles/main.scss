@@ -2,7 +2,7 @@
 @import "compass/css3";
 
 @import "normalize-scss/normalize";
-@import "libs/media-queries";
+@import "libs/mediaqueries";
 
 @import "init/mixins";
 @import "init/variables";
@@ -20,3 +20,4 @@
 @import "views/show";
 @import "views/gallery";
 @import "views/contact";
+@import "views/mediaqueries";
