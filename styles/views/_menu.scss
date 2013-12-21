@@ -1,4 +1,5 @@
 nav {
+	//FIX WITH STICKY FOOTER ?
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -21,7 +22,7 @@ nav {
 
 	ul {
 		display: block;
-		width: 255px;
+		width: 250px;
 		height: $nav-height;
 		margin: 0 auto;
 		padding: 0;
